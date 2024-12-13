@@ -89,6 +89,7 @@ namespace LoginAndRegistration
             this.LoginButton.TabIndex = 20;
             this.LoginButton.Text = "LOGIN";
             this.LoginButton.UseVisualStyleBackColor = false;
+            this.LoginButton.Click += new System.EventHandler(this.LoginButton_Click);
             // 
             // ShowPasswordChkbx
             // 
@@ -132,6 +133,7 @@ namespace LoginAndRegistration
             this.EmailText.Name = "EmailText";
             this.EmailText.Size = new System.Drawing.Size(216, 28);
             this.EmailText.TabIndex = 14;
+            this.EmailText.TextChanged += new System.EventHandler(this.EmailText_TextChanged);
             // 
             // UsernameLabel
             // 

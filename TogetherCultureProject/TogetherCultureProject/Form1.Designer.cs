@@ -141,6 +141,7 @@ namespace LoginAndRegistration
             this.ShowPasswordChkbx.TabIndex = 7;
             this.ShowPasswordChkbx.Text = "Show Password";
             this.ShowPasswordChkbx.UseVisualStyleBackColor = true;
+            this.ShowPasswordChkbx.CheckedChanged += new System.EventHandler(this.ShowPasswordChkbx_CheckedChanged);
             // 
             // RegButton
             // 
@@ -155,6 +156,7 @@ namespace LoginAndRegistration
             this.RegButton.TabIndex = 8;
             this.RegButton.Text = "REGISTER";
             this.RegButton.UseVisualStyleBackColor = false;
+            this.RegButton.Click += new System.EventHandler(this.RegButton_Click);
             // 
             // AlreadyAccountLabel
             // 

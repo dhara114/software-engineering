@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.OleDb;
 
 namespace LoginAndRegistration
 {
@@ -14,8 +15,12 @@ namespace LoginAndRegistration
     {
         public RegForm()
         {
-            InitializeComponent();
+            InitializeComponent();    
         }
+
+        OleDbConnection con = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=DatabaseMain.mdf");
+        OleDbCommand cmd = new OleDbCommand();
+        OleDbDataAdapter da = new OleDbDataAdapter();
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -48,6 +53,36 @@ namespace LoginAndRegistration
         }
 
         private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RegButton_Click(object sender, EventArgs e)
+        {
+            if (EmailText.Text == "" && PasswordText.Text == "" && ConfirmPasswordText.Text == "")
+            {
+                MessageBox.Show("Email and Password fields are empty", "please enter your email and password", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (PasswordText.Text == ConfirmPasswordText.Text)
+            {
+                con.Open();
+                string Register = "INSERT INTO DatabaseMain VALUES ('" + EmailText.Text + "', '" + PasswordText.Text + "')";
+                cmd = new OleDbCommand(Register, con);
+                cmd.ExecuteNonQuery();
+                con.Close();
+
+                MessageBox.Show("You have been registered successfully", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Passwords entered do not match", "Please enter a matching password", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                PasswordText.Text = "";
+                ConfirmPasswordText.Text = "";
+                PasswordText.Focus();
+            }
+        }
+
+        private void ShowPasswordChkbx_CheckedChanged(object sender, EventArgs e)
         {
 
         }

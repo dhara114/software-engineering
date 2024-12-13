@@ -80,6 +80,7 @@ namespace LoginAndRegistration
             this.VeriCodeText.Name = "VeriCodeText";
             this.VeriCodeText.Size = new System.Drawing.Size(308, 28);
             this.VeriCodeText.TabIndex = 20;
+            this.VeriCodeText.TextChanged += new System.EventHandler(this.VeriCodeText_TextChanged);
             // 
             // label2
             // 
@@ -135,7 +136,7 @@ namespace LoginAndRegistration
             this.Controls.Add(this.label4);
             this.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ForgotPasswordForm";
             this.Text = "ForgotPasswordForm";
             this.ResumeLayout(false);

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.OleDb;
 
 namespace LoginAndRegistration
 {
@@ -25,6 +26,16 @@ namespace LoginAndRegistration
         private void label3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void EmailText_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LoginButton_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }

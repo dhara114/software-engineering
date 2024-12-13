@@ -1,0 +1,15 @@
+C:\Users\infin\Documents\GitHub\software-engineering\TogetherCultureProject\TogetherCultureProject\obj\Debug\LoginAndRegistration.ForgotPasswordForm.resources
+C:\Users\infin\Documents\GitHub\software-engineering\TogetherCultureProject\TogetherCultureProject\obj\Debug\LoginAndRegistration.RegForm.resources
+C:\Users\infin\Documents\GitHub\software-engineering\TogetherCultureProject\TogetherCultureProject\obj\Debug\LoginAndRegistration.LoginForm.resources
+C:\Users\infin\Documents\GitHub\software-engineering\TogetherCultureProject\TogetherCultureProject\obj\Debug\TogetherCultureProject.NewPasswordForm.resources
+C:\Users\infin\Documents\GitHub\software-engineering\TogetherCultureProject\TogetherCultureProject\obj\Debug\TogetherCultureProject.Properties.Resources.resources
+C:\Users\infin\Documents\GitHub\software-engineering\TogetherCultureProject\TogetherCultureProject\obj\Debug\TogetherCultureProject.csproj.GenerateResource.cache
+C:\Users\infin\Documents\GitHub\software-engineering\TogetherCultureProject\TogetherCultureProject\obj\Debug\TogetherCultureProject.csproj.CoreCompileInputs.cache
+C:\Users\infin\Documents\GitHub\software-engineering\TogetherCultureProject\TogetherCultureProject\bin\Debug\DatabaseMain.mdf
+C:\Users\infin\Documents\GitHub\software-engineering\TogetherCultureProject\TogetherCultureProject\bin\Debug\DatabaseMain_log.ldf
+C:\Users\infin\Documents\GitHub\software-engineering\TogetherCultureProject\TogetherCultureProject\bin\Debug\TogetherCultureProject.exe.config
+C:\Users\infin\Documents\GitHub\software-engineering\TogetherCultureProject\TogetherCultureProject\bin\Debug\TogetherCultureProject.exe
+C:\Users\infin\Documents\GitHub\software-engineering\TogetherCultureProject\TogetherCultureProject\bin\Debug\TogetherCultureProject.pdb
+C:\Users\infin\Documents\GitHub\software-engineering\TogetherCultureProject\TogetherCultureProject\obj\Debug\TogetherCultureProject.exe
+C:\Users\infin\Documents\GitHub\software-engineering\TogetherCultureProject\TogetherCultureProject\obj\Debug\TogetherCultureProject.pdb
+C:\Users\infin\Documents\GitHub\software-engineering\TogetherCultureProject\TogetherCultureProject\obj\Debug\TogetherCultureProject.csproj.AssemblyReference.cache

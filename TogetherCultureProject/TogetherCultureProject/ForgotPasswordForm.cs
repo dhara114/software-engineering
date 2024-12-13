@@ -26,5 +26,10 @@ namespace LoginAndRegistration
         {
 
         }
+
+        private void VeriCodeText_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
