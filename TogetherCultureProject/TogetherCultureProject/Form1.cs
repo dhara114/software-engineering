@@ -66,7 +66,7 @@ namespace LoginAndRegistration
             else if (PasswordText.Text == ConfirmPasswordText.Text)
             {
                 con.Open();
-                string Register = "INSERT INTO DatabaseMain VALUES ('" + EmailText.Text + "', '" + PasswordText.Text + "')";
+                string Register = "INSERT INTO Table VALUES ('" + EmailText.Text + "', '" + PasswordText.Text + "')";
                 cmd = new OleDbCommand(Register, con);
                 cmd.ExecuteNonQuery();
                 con.Close();
