@@ -87,6 +87,7 @@ namespace LoginAndRegistration
             this.FirstNameText.Name = "FirstNameText";
             this.FirstNameText.Size = new System.Drawing.Size(192, 28);
             this.FirstNameText.TabIndex = 2;
+            this.FirstNameText.TextChanged += new System.EventHandler(this.FirstNameText_TextChanged);
             // 
             // PasswordText
             // 
@@ -269,6 +270,7 @@ namespace LoginAndRegistration
             this.TownCityText.Name = "TownCityText";
             this.TownCityText.Size = new System.Drawing.Size(192, 28);
             this.TownCityText.TabIndex = 21;
+            this.TownCityText.TextChanged += new System.EventHandler(this.TownCityText_TextChanged);
             // 
             // label7
             // 
@@ -311,6 +313,7 @@ namespace LoginAndRegistration
             this.MailListSub.TabIndex = 24;
             this.MailListSub.Text = "Subscribe to Mailing List";
             this.MailListSub.UseVisualStyleBackColor = true;
+            this.MailListSub.CheckedChanged += new System.EventHandler(this.MailListSub_CheckedChanged);
             // 
             // RegForm
             // 
