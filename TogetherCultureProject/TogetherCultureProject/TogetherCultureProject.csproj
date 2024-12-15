@@ -61,6 +61,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Constant.cs" />
+    <Compile Include="DatabaseMainDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseMainDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DBConnection.cs" />
     <Compile Include="ForgotPasswordForm.cs">
       <SubType>Form</SubType>
@@ -80,6 +86,12 @@
     <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="LogInSuccessful.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogInSuccessful.Designer.cs">
+      <DependentUpon>LogInSuccessful.cs</DependentUpon>
+    </Compile>
     <Compile Include="NewPasswordForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +109,9 @@
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LogInSuccessful.resx">
+      <DependentUpon>LogInSuccessful.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="NewPasswordForm.resx">
       <DependentUpon>NewPasswordForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -109,6 +124,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="DatabaseMainDataSet.xsc">
+      <DependentUpon>DatabaseMainDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseMainDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseMainDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseMainDataSet.xss">
+      <DependentUpon>DatabaseMainDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

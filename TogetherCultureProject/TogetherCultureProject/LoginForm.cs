@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.OleDb;
 
 namespace LoginAndRegistration
 {
@@ -21,6 +20,7 @@ namespace LoginAndRegistration
         private void label2_Click(object sender, EventArgs e)
         {
 
+            
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -35,7 +35,24 @@ namespace LoginAndRegistration
 
         private void LoginButton_Click(object sender, EventArgs e)
         {
-           
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'databaseMainDataSet.User' table. You can move, or remove it, as needed.
+            this.userTableAdapter.Fill(this.databaseMainDataSet.User);
+
+        }
+
+        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

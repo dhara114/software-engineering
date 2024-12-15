@@ -13,3 +13,4 @@ C:\Users\infin\Documents\GitHub\software-engineering\TogetherCultureProject\Toge
 C:\Users\infin\Documents\GitHub\software-engineering\TogetherCultureProject\TogetherCultureProject\obj\Debug\TogetherCultureProject.exe
 C:\Users\infin\Documents\GitHub\software-engineering\TogetherCultureProject\TogetherCultureProject\obj\Debug\TogetherCultureProject.pdb
 C:\Users\infin\Documents\GitHub\software-engineering\TogetherCultureProject\TogetherCultureProject\obj\Debug\TogetherCultureProject.csproj.AssemblyReference.cache
+C:\Users\infin\Documents\GitHub\software-engineering\TogetherCultureProject\TogetherCultureProject\obj\Debug\TogetherCultureProject.LogInSuccessful.resources
