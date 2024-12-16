@@ -59,7 +59,6 @@ namespace LoginAndRegistration
         private void RegButton_Click(object sender, EventArgs e)
         {
             DBConnection dbConn = DBConnection.getInstanceOfDBConnection(); //connect to db
-            //DataSet datasetUser = dbConn.getDataSet(Constant.SELECTALLUser);
 
             //variables holding text box values
             string FirstName = FirstNameText.Text;
