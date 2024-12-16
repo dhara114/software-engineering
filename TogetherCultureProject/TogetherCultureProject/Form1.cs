@@ -58,7 +58,7 @@ namespace LoginAndRegistration
         //goes through data validation and registration process when clicked
         private void RegButton_Click(object sender, EventArgs e)
         {
-            DBConnection dbConn = DBConnection.getInstanceOfDBConnection(); //connect to db
+            DBConnection dbConn = DBConnection.getInstanceOfDBConnection(); //connect to db 
 
             //variables holding text box values
             string FirstName = FirstNameText.Text;
@@ -104,13 +104,13 @@ namespace LoginAndRegistration
             }
             else if (PhoneNumberInitial.All(Char.IsDigit)) //checks if entire string is numbers
             {
-                PhoneNumber = Convert.ToInt32(PhoneNumberInitial); //phonenum string passed to int variable
                 if (Password != ConfirmPassword) //password confirmation validation
                 {
                     MessageBox.Show("Passwords do not match, enter matching passwords in both password fields");
                 }
                 else
                 {
+                    PhoneNumber = Convert.ToInt32(PhoneNumberInitial); //phonenum string passed to int variable
                     //insert text box values into db
                     dbConn.saveToDB(Constant.INSERTALLUser, FirstName, LastName, PhoneNumber, Email, Address, TownCity, Postcode, Password);
                     //return to login page
