@@ -1,13 +1,13 @@
 ﻿CREATE TABLE [dbo].[User] (
-    [UserID]      INT           NOT NULL IDENTITY,
+    [UserID]      INT           IDENTITY (1, 1) NOT NULL,
     [FirstName]   NVARCHAR (50) NULL,
     [LastName]    NVARCHAR (50) NULL,
     [PhoneNumber] INT           NULL,
     [Email]       NVARCHAR (50) NULL,
     [Address]     NVARCHAR (50) NULL,
-    [TownCity]   NVARCHAR (50) NULL,
-    [Postcode]    NVARCHAR (8)  NULL,
-    [Password]    NCHAR (10)    NULL,
+    [TownCity]    NVARCHAR (50) NULL,
+    [Postcode]    NVARCHAR (7)  NULL,
+    [Password]    NVARCHAR(50)    NULL,
     PRIMARY KEY CLUSTERED ([UserID] ASC)
 );
 

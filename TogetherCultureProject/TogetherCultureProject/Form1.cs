@@ -55,7 +55,7 @@ namespace LoginAndRegistration
         {
 
         }
-
+        //goes through data validation and registration process when clicked
         private void RegButton_Click(object sender, EventArgs e)
         {
             DBConnection dbConn = DBConnection.getInstanceOfDBConnection(); //connect to db
@@ -72,12 +72,30 @@ namespace LoginAndRegistration
             string Postcode = PostcodeText.Text;
             string Password = PasswordText.Text;
             string ConfirmPassword = ConfirmPasswordText.Text;
-
-            if (FirstName.Any(Char.IsDigit) || LastName.Any(Char.IsDigit)) //checks for numbers in name variables
+            if((FirstName.Length == 0) || (LastName.Length == 0) || (PhoneNumberInitial.Length == 0) || (Email.Length == 0) ||
+                (Address.Length == 0) || (TownCity.Length == 0) || (Postcode.Length == 0) || (Password.Length == 0) ||
+                (ConfirmPassword.Length == 0)) //checks for blank fields
+            {
+                MessageBox.Show("Required fields are empty, please make sure all fields are filled");
+            }
+            else if ((FirstName.Length > 50) || (LastName.Length > 50) || (Email.Length > 50) ||
+                (Address.Length > 50) || (TownCity.Length > 50) || (Password.Length > 50) || (ConfirmPassword.Length > 50)) //length validation
+            {
+                MessageBox.Show("An entered field contains more than 50 characters, entered data does not allow more than 50 characters");
+            }
+            else if (PhoneNumberInitial.Length > 11) //phone number length validation
+            {
+                MessageBox.Show("Phone number cannot be more than 11 digits");
+            }
+            else if (Postcode.Length != 7) //postcode length validation
+            {
+                MessageBox.Show("Incorrect postcode format used, postcode must be 7 characters with no space");
+            }
+            else if (FirstName.Any(Char.IsDigit) || LastName.Any(Char.IsDigit)) //checks for numbers in name variables
             {
                 MessageBox.Show("Name field(s) contain an invalid value, numbers cannot be used");
             }
-            if (TownCity.Any(Char.IsDigit)) //checks for numbers in TownCity variable
+            else if (TownCity.Any(Char.IsDigit)) //checks for numbers in TownCity variable
             {
                 MessageBox.Show("Town/City field contains an invalid value, numbers cannot be used");
             }
