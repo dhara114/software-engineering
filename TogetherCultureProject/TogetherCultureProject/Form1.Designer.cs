@@ -52,7 +52,6 @@ namespace LoginAndRegistration
             this.label7 = new System.Windows.Forms.Label();
             this.PostcodeText = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.MailListSub = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label1
@@ -302,26 +301,12 @@ namespace LoginAndRegistration
             this.label8.TabIndex = 22;
             this.label8.Text = "Postcode";
             // 
-            // MailListSub
-            // 
-            this.MailListSub.AutoSize = true;
-            this.MailListSub.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.MailListSub.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.MailListSub.Location = new System.Drawing.Point(589, 211);
-            this.MailListSub.Name = "MailListSub";
-            this.MailListSub.Size = new System.Drawing.Size(177, 21);
-            this.MailListSub.TabIndex = 24;
-            this.MailListSub.Text = "Subscribe to Mailing List";
-            this.MailListSub.UseVisualStyleBackColor = true;
-            this.MailListSub.CheckedChanged += new System.EventHandler(this.MailListSub_CheckedChanged);
-            // 
             // RegForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
             this.ClientSize = new System.Drawing.Size(865, 544);
-            this.Controls.Add(this.MailListSub);
             this.Controls.Add(this.PostcodeText);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.TownCityText);
@@ -383,7 +368,6 @@ namespace LoginAndRegistration
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox PostcodeText;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.CheckBox MailListSub;
     }
 }
 
