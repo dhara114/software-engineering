@@ -77,6 +77,10 @@ namespace LoginAndRegistration
             {
                 MessageBox.Show("Name field(s) contain an invalid value, numbers cannot be used");
             }
+            if (TownCity.Any(Char.IsDigit)) //checks for numbers in TownCity variable
+            {
+                MessageBox.Show("Town/City field contains an invalid value, numbers cannot be used");
+            }
             else if (Constant.IsValidEmail(Email) is false)
             {
                 MessageBox.Show("Email entered is using an invalid format");
