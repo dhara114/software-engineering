@@ -35,7 +35,7 @@ namespace TogetherCultureProject
 
         public DataSet getDataSet(string sqlQuery)
         {
-            //creates dataset object
+            //creates dataset object    
             DataSet dataset = new DataSet();
 
             using (SqlConnection connToDB = new SqlConnection(dBConnectionString))
@@ -77,6 +77,6 @@ namespace TogetherCultureProject
                 //executes command
                 sqlCommand.ExecuteNonQuery();
             }
-        } 
+        }   
     }
 }

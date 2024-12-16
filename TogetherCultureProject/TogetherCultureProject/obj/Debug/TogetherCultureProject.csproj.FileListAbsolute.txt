@@ -1,4 +1,3 @@
-C:\Users\infin\Documents\GitHub\software-engineering\TogetherCultureProject\TogetherCultureProject\obj\Debug\LoginAndRegistration.ForgotPasswordForm.resources
 C:\Users\infin\Documents\GitHub\software-engineering\TogetherCultureProject\TogetherCultureProject\obj\Debug\LoginAndRegistration.RegForm.resources
 C:\Users\infin\Documents\GitHub\software-engineering\TogetherCultureProject\TogetherCultureProject\obj\Debug\LoginAndRegistration.LoginForm.resources
 C:\Users\infin\Documents\GitHub\software-engineering\TogetherCultureProject\TogetherCultureProject\obj\Debug\TogetherCultureProject.NewPasswordForm.resources

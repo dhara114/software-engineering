@@ -40,16 +40,13 @@ namespace LoginAndRegistration
             this.EmailText = new System.Windows.Forms.TextBox();
             this.UsernameLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.databaseMainDataSet = new TogetherCultureProject.DatabaseMainDataSet();
             this.userBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.userTableAdapter = new TogetherCultureProject.DatabaseMainDataSetTableAdapters.UserTableAdapter();
             this.databaseMainDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.databaseMainDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.databaseMainDataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -165,18 +162,6 @@ namespace LoginAndRegistration
             this.label1.TabIndex = 12;
             this.label1.Text = "Get Started";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
-            this.label3.Location = new System.Drawing.Point(322, 376);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(149, 17);
-            this.label3.TabIndex = 24;
-            this.label3.Text = "Forgot Your Password?";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
             // databaseMainDataSet
             // 
             this.databaseMainDataSet.DataSetName = "DatabaseMainDataSet";
@@ -196,22 +181,12 @@ namespace LoginAndRegistration
             this.databaseMainDataSetBindingSource.DataSource = this.databaseMainDataSet;
             this.databaseMainDataSetBindingSource.Position = 0;
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(551, 143);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
-            this.dataGridView1.TabIndex = 25;
-            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
             this.ClientSize = new System.Drawing.Size(865, 544);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.NoAccountLabel);
             this.Controls.Add(this.button1);
@@ -233,7 +208,6 @@ namespace LoginAndRegistration
             ((System.ComponentModel.ISupportInitialize)(this.databaseMainDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.databaseMainDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -251,11 +225,9 @@ namespace LoginAndRegistration
         private System.Windows.Forms.TextBox EmailText;
         private System.Windows.Forms.Label UsernameLabel;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
         private TogetherCultureProject.DatabaseMainDataSet databaseMainDataSet;
         private System.Windows.Forms.BindingSource userBindingSource;
         private TogetherCultureProject.DatabaseMainDataSetTableAdapters.UserTableAdapter userTableAdapter;
         private System.Windows.Forms.BindingSource databaseMainDataSetBindingSource;
-        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

@@ -35,7 +35,10 @@ namespace LoginAndRegistration
 
         private void label2_Click_1(object sender, EventArgs e)
         {
-
+            this.Hide();
+            var LoginForm = new LoginForm();
+            LoginForm.Closed += (s, args) => this.Close();
+            LoginForm.Show();
         }
 
         private void RegForm_Load(object sender, EventArgs e)
@@ -56,7 +59,7 @@ namespace LoginAndRegistration
         private void RegButton_Click(object sender, EventArgs e)
         {
             DBConnection dbConn = DBConnection.getInstanceOfDBConnection(); //connect to db
-            DataSet datasetUser = dbConn.getDataSet(Constant.SELECTALLUser);
+            //DataSet datasetUser = dbConn.getDataSet(Constant.SELECTALLUser);
 
             //variables holding text box values
             string FirstName = FirstNameText.Text;
@@ -69,14 +72,19 @@ namespace LoginAndRegistration
             string Postcode = PostcodeText.Text;
             string Password = PasswordText.Text;
             string ConfirmPassword = ConfirmPasswordText.Text;
+
             if (FirstName.Any(Char.IsDigit) || LastName.Any(Char.IsDigit)) //checks for numbers in name variables
             {
                 MessageBox.Show("Name field(s) contain an invalid value, numbers cannot be used");
             }
+            else if (Constant.IsValidEmail(Email) is false)
+            {
+                MessageBox.Show("Email entered is using an invalid format");
+            }
             else if (PhoneNumberInitial.All(Char.IsDigit)) //checks if entire string is numbers
             {
                 PhoneNumber = Convert.ToInt32(PhoneNumberInitial); //phonenum string passed to int variable
-                if (Password != ConfirmPassword) //password confirmation validations
+                if (Password != ConfirmPassword) //password confirmation validation
                 {
                     MessageBox.Show("Passwords do not match, enter matching passwords in both password fields");
                 }
@@ -84,6 +92,11 @@ namespace LoginAndRegistration
                 {
                     //insert text box values into db
                     dbConn.saveToDB(Constant.INSERTALLUser, FirstName, LastName, PhoneNumber, Email, Address, TownCity, Postcode, Password);
+                    //return to login page
+                    this.Hide();
+                    var LoginForm = new LoginForm();
+                    LoginForm.Closed += (s, args) => this.Close();
+                    LoginForm.Show();
                 }
             }
             else

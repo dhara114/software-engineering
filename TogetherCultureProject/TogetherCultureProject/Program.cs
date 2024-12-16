@@ -16,7 +16,7 @@ namespace TogetherCultureProject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginAndRegistration.RegForm());
+            Application.Run(new LoginAndRegistration.LoginForm());
         }
     }
 }
