@@ -14,7 +14,7 @@ namespace TogetherCultureProject
         private static DBConnection _instance;
 
         //connection string
-        private string dBConnectionString;
+        private string dBConnectionString;  
 
         //constructor
         private DBConnection()

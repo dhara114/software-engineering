@@ -32,7 +32,6 @@ namespace LoginAndRegistration
             this.components = new System.ComponentModel.Container();
             this.label2 = new System.Windows.Forms.Label();
             this.NoAccountLabel = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.LoginButton = new System.Windows.Forms.Button();
             this.ShowPasswordChkbx = new System.Windows.Forms.CheckBox();
             this.PasswordText = new System.Windows.Forms.TextBox();
@@ -54,7 +53,7 @@ namespace LoginAndRegistration
             this.label2.AutoSize = true;
             this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
-            this.label2.Location = new System.Drawing.Point(322, 425);
+            this.label2.Location = new System.Drawing.Point(330, 348);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(101, 17);
             this.label2.TabIndex = 23;
@@ -64,24 +63,11 @@ namespace LoginAndRegistration
             // NoAccountLabel
             // 
             this.NoAccountLabel.AutoSize = true;
-            this.NoAccountLabel.Location = new System.Drawing.Point(322, 408);
+            this.NoAccountLabel.Location = new System.Drawing.Point(330, 331);
             this.NoAccountLabel.Name = "NoAccountLabel";
             this.NoAccountLabel.Size = new System.Drawing.Size(156, 17);
             this.NoAccountLabel.TabIndex = 22;
             this.NoAccountLabel.Text = "Don\'t Have an Account?";
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
-            this.button1.Location = new System.Drawing.Point(297, 328);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(216, 35);
-            this.button1.TabIndex = 21;
-            this.button1.Text = "CLEAR";
-            this.button1.UseVisualStyleBackColor = false;
             // 
             // LoginButton
             // 
@@ -189,7 +175,6 @@ namespace LoginAndRegistration
             this.ClientSize = new System.Drawing.Size(865, 544);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.NoAccountLabel);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.LoginButton);
             this.Controls.Add(this.ShowPasswordChkbx);
             this.Controls.Add(this.PasswordText);
@@ -217,7 +202,6 @@ namespace LoginAndRegistration
 
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label NoAccountLabel;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button LoginButton;
         private System.Windows.Forms.CheckBox ShowPasswordChkbx;
         private System.Windows.Forms.TextBox PasswordText;

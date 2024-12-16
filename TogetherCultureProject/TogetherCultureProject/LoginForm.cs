@@ -42,6 +42,10 @@ namespace LoginAndRegistration
             {
                 MessageBox.Show("Required fields are missing data, please make sure all fields are filled");
             }
+            else if ((Email.Length > 50) || (Password.Length > 50)) //length validation
+            {
+                MessageBox.Show("An entered field contains more than 50 characters, entered data does not allow more than 50 characters");
+            }
             else if (Constant.IsValidEmail(Email) is false) //email format validation
             {
                 MessageBox.Show("Email entered is using an invalid format");
